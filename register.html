@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <title>ADALET B?ROSU - Yeni M?vekkil Kayd?</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Yeni M?vekkil Kay?t Sayfas?" name="description">
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        body {
+            
+            background-image: url('img/girissayfa.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            
+
+            background-color: #f8f9fa;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        .register-container {
+            max-width: 500px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 register-container">
+                <div class="text-center mb-4">
+                    <h1 class="display-4 text-primary text-uppercase mb-2">ADALET</h1>
+                    <h4 class="text-secondary">Yeni M?vekkil Kayýt Formu</h4>
+                </div>
+
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="nameInput">Ad Soyad</label>
+                        <input type="text" class="form-control p-4" id="regName" placeholder="Adýnýzý ve soyadýnýzý girin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">E-posta Adresi</label>
+                        <input type="email" class="form-control p-4" id="regEmail" placeholder="E-posta adresinizi girin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordInput">?ifre</label>
+                        <input type="password" class="form-control p-4" id="regPassword" placeholder="Þifrenizi olu?turun" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPasswordInput">?ifre Tekrar</label>
+                        <input type="password" class="form-control p-4" id="regConfirmPassword" placeholder="Þifrenizi tekrar girin" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block py-3 mt-4">Kayýt Ol ve Onayla</button>
+
+                    <div class="mt-3 text-center">
+                        <a href="login.html" class="text-primary small">Zaten Hesabýnýz Var mý? Giriþ Yapýn</a>
+                    </div>
+                </form>
+
+                <div id="registerMessage" class="mt-3 text-center d-none alert"></div>
+                <div class="text-center mt-4">
+                    <a href="index.html" class="text-secondary small"><i class="fa fa-arrow-left mr-1"></i> Anasayfaya Geri Dön</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/login-main.js"></script>
+
+</body>
+
+</html>
